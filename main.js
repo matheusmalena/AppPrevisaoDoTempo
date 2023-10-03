@@ -1,21 +1,22 @@
-// Substitua 'YOUR_API_KEY' pela sua chave de API do OpenWeatherMap
-const apiKey = '0b33c3d15742b9d7a2a88d21cd891e79';
 
-// Substitua 'Sao%20Paulo' pelo nome da cidade que deseja obter a previsão
-const city = 'Peruibe';
+const apiKey = "a5a6be5a8e408b5ac809f8e8159a2d63"
 
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-async function fetchWeatherData() {
-    try {
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-
-        document.getElementById('temperature').textContent = data.main.temp;
-        document.getElementById('condition').textContent = data.weather[0].description;
-    } catch (error) {
-        console.error('Erro ao buscar dados meteorológicos:', error);
-    }
+function CliqueiNoBotao() {
+    const cidade = document.querySelector(".input-cidade").value
+    buscarCidade(cidade)
 }
 
-fetchWeatherData();
+async function buscarCidade(cidade) {
+    const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apiKey}&lang=pt_br&units=metric`).then(resposta => resposta.json())
+    colocarDadosnaTela(dados)
+}
+
+function colocarDadosnaTela(dados) {
+    console.log(dados)
+    document.querySelector(".titulo").innerHTML = "Tempo em " + dados.name
+    document.querySelector(".temp").innerHTML = Math.floor(dados.main.temp) + "C°"
+    document.querySelector(".texto-previsao").innerHTML = dados.weather[0].description
+    document.querySelector(".img-previsao").src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`
+    document.querySelector(".umidade").innerHTML = "Umidade: " + dados.main.humidity + "%"
+
+}

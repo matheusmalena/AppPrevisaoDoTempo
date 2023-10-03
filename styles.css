@@ -18,6 +18,8 @@ body{
 }
 
 .caixa-tempo{
+    width: 90%;
+   max-width: 450px;
     background-color: #000000;
     opacity: 0.8;
     border-radius: 25px;
@@ -32,28 +34,61 @@ body{
     font-size: 20px;
     color: white;
     background-color: #7c7c7c2b;
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
 }
 
 .titulo{
+    margin: 10px 0;
     color: white;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.temp{
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+    
 }
 
 .texto{
     color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;
 }
 
-.botao-buscar{
+.botao-busca{
     border: none;
     outline: none;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 25px;
     background-color: #7c7c7c2b;
     cursor: pointer;
     float: right;
 
 }
 
-.img-buscar{
+.img-busca{
     width: 25px;
+}
+
+.caixa-media{
+    padding: 20px;
+}
+
+.caixa-menor{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.texto-previsao{
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.umidade{
+    color: #ffffff;
+    margin-top: 20px;
 }
