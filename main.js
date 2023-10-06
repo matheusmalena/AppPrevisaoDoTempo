@@ -31,3 +31,19 @@ function colocarDadosnaTela(dados) {
     document.querySelector(".umidade").innerHTML = "Umidade: " + dados.main.humidity + "%"
     
 }*/
+
+ 
+ const botao = document.querySelector("#botao");
+ const rodape = document.querySelector(".desenvolvedor");
+
+ 
+ botao.addEventListener("change", function() {
+     
+     if (botao.checked) {
+         document.body.style.background = "linear-gradient(#14385b, #000000)";
+         rodape.style.color = "#ffffff";
+         
+     } else {
+         document.body.style.background = "linear-gradient(#030364, #b8b8b8)";
+     }
+ });
