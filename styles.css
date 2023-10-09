@@ -115,6 +115,10 @@ body {
 
 .caixa-redes-sociais{
     margin: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
 }
 
 .redes-sociais-instagram{
@@ -123,13 +127,13 @@ body {
 }
 
 .redes-sociais-git{
-    width: 30px; 
-    height: 30px;
+    width: 42px; 
+    height: 42px;
 }
 
 .redes-sociais-linkedin{
-    width: 25px; 
-    height: 25px;
+    width: 30px; 
+    height: 30px;
 }
 
 .toggle {
