@@ -32,18 +32,27 @@ function colocarDadosnaTela(dados) {
     
 }*/
 
- 
- const botao = document.querySelector("#botao");
- const rodape = document.querySelector(".desenvolvedor");
+document.addEventListener("DOMContentLoaded", function () {
+    const botao = document.querySelector("#botao");
+    const rodape = document.querySelector(".desenvolvedor");
+    const instagram = document.querySelector(".redes-sociais-instagram a img");
+    const linkedin = document.querySelector(".redes-sociais-linkedin a img");
+    const git = document.querySelector(".redes-sociais-git div a img");
 
- 
- botao.addEventListener("change", function() {
-     
-     if (botao.checked) {
-         document.body.style.background = "linear-gradient(#14385b, #000000)";
-         rodape.style.color = "#ffffff";
-         
-     } else {
-         document.body.style.background = "linear-gradient(#030364, #b8b8b8)";
-     }
- });
+    botao.addEventListener("change", function () {
+        if (botao.checked) {
+            document.body.style.background = "linear-gradient(#14385b, #000000)";
+            rodape.style.color = "#ffffff";
+            instagram.src = "fotos/assets/git-branco.png";
+            git.src = "fotos/assets/git-branco.png";
+            linkedin.src = "fotos/assets/linkedin-branco.png";
+        } else {
+            document.body.style.background = "linear-gradient(#030364, #b8b8b8)";
+            rodape.style.color = "#000000";
+        }
+    });
+
+});
+
+
+

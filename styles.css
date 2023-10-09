@@ -113,13 +113,23 @@ body {
     flex-direction: column;
 }
 
-.redes-sociais{
+.caixa-redes-sociais{
+    margin: 5px;
+}
+
+.redes-sociais-instagram{
     width: 25px; 
     height: 25px;
 }
 
-.caixa-redes-sociais{
-    margin: 5px;
+.redes-sociais-git{
+    width: 25px; 
+    height: 25px;
+}
+
+.redes-sociais-linkedin{
+    width: 25px; 
+    height: 25px;
 }
 
 .toggle {
