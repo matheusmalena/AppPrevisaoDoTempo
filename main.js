@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const rodape = document.querySelector(".desenvolvedor");
     const instagram = document.querySelector(".redes-sociais-instagram a img");
     const linkedin = document.querySelector(".redes-sociais-linkedin a img");
-    const git = document.querySelector(".redes-sociais-git div a img");
+    const git = document.querySelector(".redes-sociais-git img");
 
     botao.addEventListener("change", function () {
         if (botao.checked) {
