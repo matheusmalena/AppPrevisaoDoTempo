@@ -34,7 +34,8 @@ function colocarDadosnaTela(dados) {
 
 document.addEventListener("DOMContentLoaded", function () {
     const botao = document.querySelector("#botao");
-    const rodape = document.querySelector(".desenvolvedor");
+    const desenvolvedor = document.querySelector(".desenvolvedor");
+    const rodape = document.querySelector(".rodape");
     const caixaRedesSociais = document.querySelector(".caixa-redes-sociais");
     const instagram = document.querySelector(".redes-sociais-instagram");
     const linkedin = document.querySelector(".redes-sociais-linkedin");
@@ -43,22 +44,29 @@ document.addEventListener("DOMContentLoaded", function () {
     botao.addEventListener("change", function () {
         if (botao.checked) {
             document.body.style.background = "linear-gradient(#14385b, #000000)";
-            rodape.style.color = "#ffffff";
-            caixaRedesSociais.style.gap = "20px";
+            desenvolvedor.style.color = "#ffffff";
             instagram.src = "fotos/instagram-branco.png";
             git.src = "fotos/git-branco.png";
             git.style.width = "25px";
             git.style.height = "25px";
             linkedin.src = "fotos/linkedin-branco.png";
+            linkedin.style.width = "25px";
+            linkedin.style.height = "25px";
+            rodape.style.gap = "5px";
+            
+            
         } else {
             document.body.style.background = "linear-gradient(#030364, #b8b8b8)";
-            rodape.style.color = "#000000";
+            desenvolvedor.style.color = "#000000";
             instagram.src = "fotos/instagram.png"
             git.src = "fotos/git.png"
             linkedin.src = "fotos/linkedin.png"
             git.style.width = "42px";
             git.style.height = "42px";
-            
+            linkedin.style.width = "28px";
+            linkedin.style.height = "28px";
+            rodape.style.gap = "5px";
+            caixaRedesSociais.gap = "10px";
         }
     });
 
