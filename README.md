@@ -1,6 +1,6 @@
 # Projeto de Previsão do Tempo
 
-![Previsão do Tempo]()
+![Previsão do Tempo](\fotos\Animação-previsaoDoTempo.gif)
 
 ## Descrição
 
