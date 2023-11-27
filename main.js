@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     botao.addEventListener("change", function () {
         if (botao.checked) {
-            document.body.style.background = "linear-gradient(#14385b, #000000)";
+            document.body.style.backgroundImage = "url('https://macmagazine.com.br/wp-content/uploads/2022/02/25-noite-scaled.jpg')";
             desenvolvedor.style.color = "#ffffff";
             instagram.src = "fotos/instagram-branco.png";
             git.src = "fotos/git-branco.png";
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             
         } else {
-            document.body.style.background = "linear-gradient(#030364, #b8b8b8)";
+            document.body.style.backgroundImage = "url('https://portaldepinhal.com.br/wp-content/uploads/2022/10/PREVISAO-DO-TEMPO-CLIMA-AMANHA-1-1000x600.jpg')";
             desenvolvedor.style.color = "#000000";
             instagram.src = "fotos/instagram.png"
             git.src = "fotos/git.png"
