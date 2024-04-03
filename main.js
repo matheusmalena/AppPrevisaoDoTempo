@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     botao.addEventListener("change", function () {
         if (botao.checked) {
-            document.body.style.backgroundImage = "url('https://macmagazine.com.br/wp-content/uploads/2022/02/25-noite-scaled.jpg')";
+            document.body.style.backgroundImage = 'url(./fotos/praia-escuro.jpg)';
             desenvolvedor.style.color = "#ffffff";
             instagram.src = "fotos/instagram-branco.png";
             git.src = "fotos/git-branco.png";
@@ -52,21 +52,21 @@ document.addEventListener("DOMContentLoaded", function () {
             linkedin.src = "fotos/linkedin-branco.png";
             linkedin.style.width = "25px";
             linkedin.style.height = "25px";
-            rodape.style.gap = "5px";
-            
-            
-        } else {
-            document.body.style.backgroundImage = "url('https://portaldepinhal.com.br/wp-content/uploads/2022/10/PREVISAO-DO-TEMPO-CLIMA-AMANHA-1-1000x600.jpg')";
+            caixaRedesSociais.style.gap = "15px";
+            caixaRedesSociais.style.marginTop = "15px";
+
+        } else { 
+            document.body.style.backgroundImage = 'url(./fotos/praia-claro.jpg)';
             desenvolvedor.style.color = "#000000";
             instagram.src = "fotos/instagram.png"
             git.src = "fotos/git.png"
             linkedin.src = "fotos/linkedin.png"
-            git.style.width = "42px";
-            git.style.height = "42px";
+            git.style.width = "40px";
+            git.style.height = "40px";
             linkedin.style.width = "28px";
             linkedin.style.height = "28px";
-            rodape.style.gap = "5px";
-            caixaRedesSociais.gap = "10px";
+            caixaRedesSociais.style.gap = "5px";
+            caixaRedesSociais.style.marginTop = "5px";
         }
     });
 
