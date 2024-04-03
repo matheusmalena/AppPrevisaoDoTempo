@@ -61,12 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
             instagram.src = "fotos/instagram.png"
             git.src = "fotos/git.png"
             linkedin.src = "fotos/linkedin.png"
-            git.style.width = "40px";
-            git.style.height = "40px";
-            linkedin.style.width = "28px";
-            linkedin.style.height = "28px";
+            git.style.width = "42px";
+            git.style.height = "42px";
+            linkedin.style.width = "30px";
+            linkedin.style.height = "30px";
             caixaRedesSociais.style.gap = "5px";
-            caixaRedesSociais.style.marginTop = "5px";
+            caixaRedesSociais.style.marginTop = "4px";
         }
     });
 
